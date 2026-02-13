@@ -7,6 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](#)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-7c3aed.svg)](#)
+[![skills.sh](https://img.shields.io/badge/skills.sh-install-orange.svg)](https://skills.sh/6missedcalls/erpnext-skill)
 
 Build full-featured ERPNext applications without leaving your editor.
 Claude Code gains instant access to every Frappe API, DocType pattern,
@@ -45,22 +46,52 @@ debug custom ERPNext apps.
 
 ---
 
-## Quick Start
+## Installation
 
-### 1. Install the Skill
-
-Clone the repository into your Claude Code skills directory:
+### One-line install via [skills.sh](https://skills.sh)
 
 ```bash
-git clone https://github.com/6missedcalls/erpnext-skill.git
+npx skills add 6missedcalls/erpnext-skill
 ```
 
-Or add it as a skill path in your Claude Code configuration.
+To install globally (available across all projects):
 
-### 2. Start Building
+```bash
+npx skills add 6missedcalls/erpnext-skill -g
+```
+
+To target a specific agent:
+
+```bash
+npx skills add 6missedcalls/erpnext-skill -a claude-code
+```
+
+### Manual install
+
+Clone directly into your Claude Code skills directory:
+
+```bash
+# Project-level (current project only)
+git clone https://github.com/6missedcalls/erpnext-skill.git .claude/skills/erpnext-skill
+
+# Global (all projects)
+git clone https://github.com/6missedcalls/erpnext-skill.git ~/.claude/skills/erpnext-skill
+```
+
+### Via Claude Code plugin marketplace
+
+```
+/plugin marketplace add 6missedcalls/erpnext-skill
+```
+
+Then select **Browse and install plugins** and follow the prompts.
+
+---
+
+## Quick Start
 
 Once installed, Claude Code automatically loads the skill whenever you
-work on a Frappe or ERPNext project. No manual invocation is needed --
+work on a Frappe or ERPNext project. No manual invocation needed --
 just ask Claude Code to build what you need:
 
 ```
