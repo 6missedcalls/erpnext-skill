@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Node
+node_modules/
+
+# Environment
+.env
+.env.local
+
+# Misc
+*.log
+tmp/
